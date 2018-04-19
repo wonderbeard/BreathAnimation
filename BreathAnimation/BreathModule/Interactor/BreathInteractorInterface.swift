@@ -9,10 +9,17 @@
 import Foundation
 
 protocol BreathInteractorInput {
+    
+    var output: BreathInteractorOutput! { get set }
+    
     func runScript(_ animationScript: AnimationScript)
+    
 }
 
-protocol BreathInteractorOutput {
+protocol BreathInteractorOutput: class {
+    
     func didStartCommand(_ command: AnimationScript.Command)
+    
     func didFinish()
+    
 }

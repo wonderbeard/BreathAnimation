@@ -10,7 +10,7 @@ import UIKit
 
 class BreathViewController: UIViewController {
     
-    var output: BreathViewOutput?
+    var output: BreathViewOutput!
     
     @IBOutlet weak var animationTypeLabel: UILabel!
     @IBOutlet weak var animationRemainingTimeLabel: UILabel!
@@ -44,6 +44,10 @@ extension BreathViewController: BreathViewInput {
     
     func setTotalRemainingTime(_ remainingTime: String?) {
         totalRemainingTimeLabel.text = remainingTime
+    }
+    
+    func setUserInteractionEnabled(_ enabled: Bool) {
+        // TODO
     }
     
 }

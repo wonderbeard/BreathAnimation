@@ -9,7 +9,15 @@
 import UIKit
 
 protocol BreathPresenterInput {
+    
+    var view: BreathViewInput! { get set }
+    
+    var interactor: BreathInteractorInput! { get set }
+    
     func setAnimationScript(_ script: AnimationScript)
+    
+    func animate()
+    
 }
 
 class BreathPresenter: BreathPresenterInput {
@@ -34,6 +42,12 @@ extension BreathPresenter: BreathViewOutput {
     
     func viewIsReady() {
         view.setIndicatorScale(0.75)
+        view.setUserInteractionEnabled(true)
+    }
+    
+    func didTapOnView() {
+        view.setUserInteractionEnabled(false)
+        animate()
     }
     
 }
@@ -46,6 +60,7 @@ extension BreathPresenter: BreathInteractorOutput {
     
     func didFinish() {
         view.setIndicatorScale(0.75)
+        view.setUserInteractionEnabled(true)
     }
     
 }
