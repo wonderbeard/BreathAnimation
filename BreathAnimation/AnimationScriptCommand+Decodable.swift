@@ -13,7 +13,7 @@ enum ScriptCommandDecodingError: Error {
     case colorInappropriateFormat
 }
 
-extension ScriptCommand: Decodable {
+extension AnimationScript.Command: Decodable {
     
     enum DecodingKey: String, CodingKey {
         case type, duration, color

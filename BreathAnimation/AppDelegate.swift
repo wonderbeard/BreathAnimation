@@ -21,7 +21,8 @@ extension AppDelegate: UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         let scriptFileURL = Bundle.main.url(forResource: "AnimationScript", withExtension: "json")
         let scriptData = scriptFileURL.flatMap{ try? Data.init(contentsOf: $0) }
-        let script = scriptData.flatMap{ try? jsonDecoder.decode([ScriptCommand].self, from: $0) }
+        let scriptCommands = scriptData.flatMap{ try? jsonDecoder.decode([AnimationScript.Command].self, from: $0) }
+        let script = scriptCommands.map(AnimationScript.init)
         print(script!)
     }
     
