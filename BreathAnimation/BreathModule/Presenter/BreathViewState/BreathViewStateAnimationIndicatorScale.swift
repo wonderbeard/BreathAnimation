@@ -6,14 +6,16 @@
 //  Copyright © 2018 wonderbeard. All rights reserved.
 //
 
+import Foundation
 import CoreGraphics
 
 struct BreathViewStateAnimationIndicatorScale: BreathViewState {
     
     var scale: CGFloat
+    var duration: TimeInterval
     
     func apply(on view: BreathViewInput) {
-        view.setIndicatorScale(scale)
+        view.setIndicatorScale(scale, with: duration)
     }
     
 }

@@ -34,8 +34,10 @@ extension BreathViewController: BreathViewInput {
         animationRemainingTimeLabel.text = animationRemainingTime
     }
     
-    func setIndicatorScale(_ scale: CGFloat) {
-        animationIndicatorView.transform = CGAffineTransform(scaleX: scale, y: scale)
+    func setIndicatorScale(_ scale: CGFloat, with duration: TimeInterval) {
+        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseInOut, animations: { [animationIndicatorView] in
+            animationIndicatorView?.transform = CGAffineTransform(scaleX: scale, y: scale)
+        })
     }
     
     func setIndicatorColor(_ color: UIColor) {

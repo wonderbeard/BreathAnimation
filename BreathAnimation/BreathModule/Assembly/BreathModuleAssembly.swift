@@ -8,11 +8,21 @@
 
 import Foundation
 
-class BreathModuleAssembly {
+class BreathModuleAssembler {
     
-    var view: BreathViewInput!
-    var presenter: (BreathPresenterInput & BreathViewOutput & BreathInteractorOutput)!
-    var interactor: BreathInteractorInput!
+    private(set) var view: BreathViewInput
+    private(set) var presenter: BreathPresenterInput & BreathViewOutput & BreathInteractorOutput
+    private(set) var interactor: BreathInteractorInput
+    
+    init(
+        view: BreathViewInput,
+        presenter: BreathPresenterInput & BreathViewOutput & BreathInteractorOutput,
+        interactor: BreathInteractorInput)
+    {
+        self.view = view
+        self.presenter = presenter
+        self.interactor = interactor
+    }
     
     func assembly() {
         presenter.view = view

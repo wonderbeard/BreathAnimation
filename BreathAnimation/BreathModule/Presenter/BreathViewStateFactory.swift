@@ -34,14 +34,14 @@ class DefaultBreathViewStateFactory: BreathViewStateFactory {
     private func makeInhaleState(for command: AnimationScript.Command) -> BreathViewState {
         return CompositeBreathViewState(
             makeSharedState(for: command),
-            BreathViewStateAnimationIndicatorScale(scale: 1)
+            BreathViewStateAnimationIndicatorScale(scale: 1, duration: command.duration)
         )
     }
     
     private func makeExhaleState(for command: AnimationScript.Command) -> BreathViewState {
         return CompositeBreathViewState(
             makeSharedState(for: command),
-            BreathViewStateAnimationIndicatorScale(scale: 0.5)
+            BreathViewStateAnimationIndicatorScale(scale: 0.5, duration: command.duration)
         )
     }
     
