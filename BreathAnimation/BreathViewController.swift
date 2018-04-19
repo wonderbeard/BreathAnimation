@@ -10,7 +10,7 @@ import UIKit
 
 class BreathViewController: UIViewController {
     
-    weak var output: BreathViewOutput!
+    var output: BreathViewOutput?
     
     @IBOutlet weak var animationTypeLabel: UILabel!
     @IBOutlet weak var animationRemainingTimeLabel: UILabel!
@@ -19,7 +19,7 @@ class BreathViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        output.viewIsReady()
+        output?.viewIsReady()
     }
     
 }

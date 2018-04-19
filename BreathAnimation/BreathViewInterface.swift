@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol BreathViewInput {
+protocol BreathViewInput: class {
     func setAnimationType(_ animationType: String?)
     func setAnimationRemainingTime(_ animationRemainingTime: String?)
     func setIndicatorScale(_ scale: CGFloat)
