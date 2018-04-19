@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150DC91977F3AF583E7054B676482505 /* Pods-BreathAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0777332B021F316597B3DB4C289BB77 /* Pods-BreathAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B462B404F4AA7FC6A466892A368EB19 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61B948B6C573B93171D3CC4A6C0011 /* SwiftHEXColors.swift */; };
+		2CE8E7D5DA807FEA12F078EF31ACBE5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5B811F3211F83FE4FAA4A59C18DB98B0 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = C265DA3D31FDD3AF6EC32E1C06DC85DE /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DF4ACE09B3A9D7CA25AAF8E3B9C8329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8D5EB26AF305D733E3AA223EB979FFC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A06699E95951CA95712151732755D425 /* Pods-BreathAnimationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FCDE3E949533062459AD17A597EC37 /* Pods-BreathAnimationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C82A8064FABED87C0145F7F4DFD91C1B /* Pods-BreathAnimationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D8C12FAA8A33B7BE1860E68B61546E /* Pods-BreathAnimationTests-dummy.m */; };
+		D6AD1364751AA7574F5476DE8D1C62C5 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 520EF146EB872F4990830F12DCB863EC /* SwiftHEXColors-dummy.m */; };
+		DAC80AFDE520DB8DF660B919D9E8FC56 /* Pods-BreathAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6DEEBB9A5824488F33FA70CD4C147 /* Pods-BreathAnimation-dummy.m */; };
+		DECDE6B0E48C65081A838A6CCA9F5595 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D081612D021BC4D9D83DDA3A4D863FB9 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33DFF3C651984EBC238458D5E44F603A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD6E67E4F76E5638661E01509D47AAA;
+			remoteInfo = SwiftHEXColors;
+		};
+		73CBC46691C8C9ACDC8AD933F0D31532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6982F6C23BD6FACF736E1653DBF76C83;
+			remoteInfo = "Pods-BreathAnimation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00031E14CFE0A0540571D1B18B7BE8D2 /* Pods-BreathAnimation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreathAnimation-frameworks.sh"; sourceTree = "<group>"; };
+		012F0E5A1C0830C9742409F35CF91242 /* Pods-BreathAnimation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathAnimation-acknowledgements.plist"; sourceTree = "<group>"; };
+		01999C442E8360EEFADA36913A32FFB5 /* Pods_BreathAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BreathAnimation.framework; path = "Pods-BreathAnimation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA6DEEBB9A5824488F33FA70CD4C147 /* Pods-BreathAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathAnimation-dummy.m"; sourceTree = "<group>"; };
+		13F3E0902B0D7A85F1E6A8825D260C84 /* Pods-BreathAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		2F28765A12C52F7A1B04D0346CF23CD7 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
+		2F8A802D20BBC709597C5013711F202D /* Pods-BreathAnimationTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreathAnimationTests-resources.sh"; sourceTree = "<group>"; };
+		38D5DE7EA7ED57A91A352F42E8AEC5FF /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHEXColors.framework; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7280C96F36911C289B4C6C3D74D483 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
+		3ECE03E6D92A0545A38F64A4D21E21AB /* Pods-BreathAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		40EA6D986CB02DE35BAE85183A1AF82A /* Pods-BreathAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A61B948B6C573B93171D3CC4A6C0011 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		51D8C12FAA8A33B7BE1860E68B61546E /* Pods-BreathAnimationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathAnimationTests-dummy.m"; sourceTree = "<group>"; };
+		520EF146EB872F4990830F12DCB863EC /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
+		540E0BDF5B07C8C48775549D97126AC7 /* Pods-BreathAnimationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathAnimationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6065E14689E237E1C28E50F05D972031 /* Pods_BreathAnimationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BreathAnimationTests.framework; path = "Pods-BreathAnimationTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6378F3C6C54AA1964F914FF6BFD65822 /* Pods-BreathAnimationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreathAnimationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		848BF49A65BA906421339B09D63DDC26 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		8AF44CEFA370C88F669F02712991CCE3 /* Pods-BreathAnimationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreathAnimationTests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F46D08F8184532BCEFFD0730D349A77 /* Pods-BreathAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreathAnimation.modulemap"; sourceTree = "<group>"; };
+		A0777332B021F316597B3DB4C289BB77 /* Pods-BreathAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreathAnimation-umbrella.h"; sourceTree = "<group>"; };
+		A131B969008A8D7110B173B521DC5542 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A159C012B9833E90DB7E092FB092BD2F /* Pods-BreathAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFABAFB36F52EE608B5C6282151FC099 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C265DA3D31FDD3AF6EC32E1C06DC85DE /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
+		C53D37E83F6E6F9068065EC3ECD4F8E8 /* Pods-BreathAnimation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreathAnimation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8B0A51DF9084F75E6A71099B84A71F3 /* Pods-BreathAnimation-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreathAnimation-resources.sh"; sourceTree = "<group>"; };
+		CB8A705677C8CBA441B856DFCC2FB1C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D081612D021BC4D9D83DDA3A4D863FB9 /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
+		E1A6C97D4F419C8DEF029495E2076D80 /* Pods-BreathAnimationTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreathAnimationTests-frameworks.sh"; sourceTree = "<group>"; };
+		E8FCDE3E949533062459AD17A597EC37 /* Pods-BreathAnimationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreathAnimationTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A4D7A7E2C1B20D11FD8DE21CF9D8193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF4ACE09B3A9D7CA25AAF8E3B9C8329 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBE114F7FBD60E28B0C467EF6CE6B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5EB26AF305D733E3AA223EB979FFC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD580129421BC853A3F49E49B0710A10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE8E7D5DA807FEA12F078EF31ACBE5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DACEA36E07A8903A46BAC1F6521BF3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01999C442E8360EEFADA36913A32FFB5 /* Pods_BreathAnimation.framework */,
+				6065E14689E237E1C28E50F05D972031 /* Pods_BreathAnimationTests.framework */,
+				38D5DE7EA7ED57A91A352F42E8AEC5FF /* SwiftHEXColors.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643EF5A3C165FDF63B0AA5963609D6B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EE78F953F95B965777D3D4D3D30987F /* SwiftHEXColors */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7534A291409AD6A79D027CE35CD5D42B /* Pods-BreathAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A131B969008A8D7110B173B521DC5542 /* Info.plist */,
+				9F46D08F8184532BCEFFD0730D349A77 /* Pods-BreathAnimation.modulemap */,
+				C53D37E83F6E6F9068065EC3ECD4F8E8 /* Pods-BreathAnimation-acknowledgements.markdown */,
+				012F0E5A1C0830C9742409F35CF91242 /* Pods-BreathAnimation-acknowledgements.plist */,
+				0DA6DEEBB9A5824488F33FA70CD4C147 /* Pods-BreathAnimation-dummy.m */,
+				00031E14CFE0A0540571D1B18B7BE8D2 /* Pods-BreathAnimation-frameworks.sh */,
+				C8B0A51DF9084F75E6A71099B84A71F3 /* Pods-BreathAnimation-resources.sh */,
+				A0777332B021F316597B3DB4C289BB77 /* Pods-BreathAnimation-umbrella.h */,
+				13F3E0902B0D7A85F1E6A8825D260C84 /* Pods-BreathAnimation.debug.xcconfig */,
+				3ECE03E6D92A0545A38F64A4D21E21AB /* Pods-BreathAnimation.release.xcconfig */,
+			);
+			name = "Pods-BreathAnimation";
+			path = "Target Support Files/Pods-BreathAnimation";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				643EF5A3C165FDF63B0AA5963609D6B0 /* Pods */,
+				4DACEA36E07A8903A46BAC1F6521BF3B /* Products */,
+				B6047F406159C2BDA9987C21F2BA47AD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7EE78F953F95B965777D3D4D3D30987F /* SwiftHEXColors */ = {
+			isa = PBXGroup;
+			children = (
+				C265DA3D31FDD3AF6EC32E1C06DC85DE /* SwiftHEXColors.h */,
+				4A61B948B6C573B93171D3CC4A6C0011 /* SwiftHEXColors.swift */,
+				FF257A500705D94B64F9EA33A74DEAD6 /* Support Files */,
+			);
+			name = SwiftHEXColors;
+			path = SwiftHEXColors;
+			sourceTree = "<group>";
+		};
+		B6047F406159C2BDA9987C21F2BA47AD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7534A291409AD6A79D027CE35CD5D42B /* Pods-BreathAnimation */,
+				C3A10926341848E0FACD82E8709B5C34 /* Pods-BreathAnimationTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3A10926341848E0FACD82E8709B5C34 /* Pods-BreathAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A705677C8CBA441B856DFCC2FB1C7 /* Info.plist */,
+				8AF44CEFA370C88F669F02712991CCE3 /* Pods-BreathAnimationTests.modulemap */,
+				6378F3C6C54AA1964F914FF6BFD65822 /* Pods-BreathAnimationTests-acknowledgements.markdown */,
+				540E0BDF5B07C8C48775549D97126AC7 /* Pods-BreathAnimationTests-acknowledgements.plist */,
+				51D8C12FAA8A33B7BE1860E68B61546E /* Pods-BreathAnimationTests-dummy.m */,
+				E1A6C97D4F419C8DEF029495E2076D80 /* Pods-BreathAnimationTests-frameworks.sh */,
+				2F8A802D20BBC709597C5013711F202D /* Pods-BreathAnimationTests-resources.sh */,
+				E8FCDE3E949533062459AD17A597EC37 /* Pods-BreathAnimationTests-umbrella.h */,
+				A159C012B9833E90DB7E092FB092BD2F /* Pods-BreathAnimationTests.debug.xcconfig */,
+				40EA6D986CB02DE35BAE85183A1AF82A /* Pods-BreathAnimationTests.release.xcconfig */,
+			);
+			name = "Pods-BreathAnimationTests";
+			path = "Target Support Files/Pods-BreathAnimationTests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FF257A500705D94B64F9EA33A74DEAD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFABAFB36F52EE608B5C6282151FC099 /* Info.plist */,
+				3A7280C96F36911C289B4C6C3D74D483 /* SwiftHEXColors.modulemap */,
+				848BF49A65BA906421339B09D63DDC26 /* SwiftHEXColors.xcconfig */,
+				520EF146EB872F4990830F12DCB863EC /* SwiftHEXColors-dummy.m */,
+				2F28765A12C52F7A1B04D0346CF23CD7 /* SwiftHEXColors-prefix.pch */,
+				D081612D021BC4D9D83DDA3A4D863FB9 /* SwiftHEXColors-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHEXColors";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18B498769E92C2B2F2D960162331AC1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECDE6B0E48C65081A838A6CCA9F5595 /* SwiftHEXColors-umbrella.h in Headers */,
+				5B811F3211F83FE4FAA4A59C18DB98B0 /* SwiftHEXColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BD1B20552CA702E5442EDBD1970EF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150DC91977F3AF583E7054B676482505 /* Pods-BreathAnimation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F058811ECFCBF5629D9317D451DE52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06699E95951CA95712151732755D425 /* Pods-BreathAnimationTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0680BB92BBD57A2E4B55607A19E8F88E /* Pods-BreathAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8672DD37E79BA84C5F86050CAFAF75 /* Build configuration list for PBXNativeTarget "Pods-BreathAnimationTests" */;
+			buildPhases = (
+				F91CC58632AB1C1AD793D1D2B94645CC /* Sources */,
+				7A4D7A7E2C1B20D11FD8DE21CF9D8193 /* Frameworks */,
+				57F058811ECFCBF5629D9317D451DE52 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				932CD8BA568D63D85D8C05F551E565B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-BreathAnimationTests";
+			productName = "Pods-BreathAnimationTests";
+			productReference = 6065E14689E237E1C28E50F05D972031 /* Pods_BreathAnimationTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6982F6C23BD6FACF736E1653DBF76C83 /* Pods-BreathAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAE405124A3CBAA22E0543AFA61F0D8 /* Build configuration list for PBXNativeTarget "Pods-BreathAnimation" */;
+			buildPhases = (
+				D0E088FA66320F4C553E9AB1BEC93A62 /* Sources */,
+				BD580129421BC853A3F49E49B0710A10 /* Frameworks */,
+				24BD1B20552CA702E5442EDBD1970EF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6692B56CC01A0AB4BE7487B22D5953E /* PBXTargetDependency */,
+			);
+			name = "Pods-BreathAnimation";
+			productName = "Pods-BreathAnimation";
+			productReference = 01999C442E8360EEFADA36913A32FFB5 /* Pods_BreathAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DD6E67E4F76E5638661E01509D47AAA /* SwiftHEXColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD9FEAF6E87491F36DA7BE413C034F /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
+			buildPhases = (
+				D1589810B55DCEF5CA4013DE4375A1B2 /* Sources */,
+				8BBE114F7FBD60E28B0C467EF6CE6B56 /* Frameworks */,
+				18B498769E92C2B2F2D960162331AC1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHEXColors;
+			productName = SwiftHEXColors;
+			productReference = 38D5DE7EA7ED57A91A352F42E8AEC5FF /* SwiftHEXColors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4DACEA36E07A8903A46BAC1F6521BF3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6982F6C23BD6FACF736E1653DBF76C83 /* Pods-BreathAnimation */,
+				0680BB92BBD57A2E4B55607A19E8F88E /* Pods-BreathAnimationTests */,
+				8DD6E67E4F76E5638661E01509D47AAA /* SwiftHEXColors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0E088FA66320F4C553E9AB1BEC93A62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC80AFDE520DB8DF660B919D9E8FC56 /* Pods-BreathAnimation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1589810B55DCEF5CA4013DE4375A1B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AD1364751AA7574F5476DE8D1C62C5 /* SwiftHEXColors-dummy.m in Sources */,
+				1B462B404F4AA7FC6A466892A368EB19 /* SwiftHEXColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91CC58632AB1C1AD793D1D2B94645CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82A8064FABED87C0145F7F4DFD91C1B /* Pods-BreathAnimationTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		932CD8BA568D63D85D8C05F551E565B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BreathAnimation";
+			target = 6982F6C23BD6FACF736E1653DBF76C83 /* Pods-BreathAnimation */;
+			targetProxy = 73CBC46691C8C9ACDC8AD933F0D31532 /* PBXContainerItemProxy */;
+		};
+		B6692B56CC01A0AB4BE7487B22D5953E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHEXColors;
+			target = 8DD6E67E4F76E5638661E01509D47AAA /* SwiftHEXColors */;
+			targetProxy = 33DFF3C651984EBC238458D5E44F603A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		206D3437F3B3415EB5D0B128EDFFB227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ECE03E6D92A0545A38F64A4D21E21AB /* Pods-BreathAnimation.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B018A94B92F803C4A1B11BBA5BDCAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F3E0902B0D7A85F1E6A8825D260C84 /* Pods-BreathAnimation.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47272FEDAE2A12BA4B57275BFF02F63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848BF49A65BA906421339B09D63DDC26 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B8E65059FFF6FF4F0EAB41938E56BB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40EA6D986CB02DE35BAE85183A1AF82A /* Pods-BreathAnimationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathAnimationTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C74342320A4F396A3782F48AC444A8F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A159C012B9833E90DB7E092FB092BD2F /* Pods-BreathAnimationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathAnimationTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC094E09C7E1F926C0987BAA85A63484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848BF49A65BA906421339B09D63DDC26 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD9FEAF6E87491F36DA7BE413C034F /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC094E09C7E1F926C0987BAA85A63484 /* Debug */,
+				47272FEDAE2A12BA4B57275BFF02F63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8672DD37E79BA84C5F86050CAFAF75 /* Build configuration list for PBXNativeTarget "Pods-BreathAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74342320A4F396A3782F48AC444A8F8 /* Debug */,
+				7B8E65059FFF6FF4F0EAB41938E56BB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAE405124A3CBAA22E0543AFA61F0D8 /* Build configuration list for PBXNativeTarget "Pods-BreathAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B018A94B92F803C4A1B11BBA5BDCAA7 /* Debug */,
+				206D3437F3B3415EB5D0B128EDFFB227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30AE7FD6FB1B765FB4E8D805 /* Pods_BreathAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB61995F12439488E03654D /* Pods_BreathAnimation.framework */; };
+		8D477E5DE89F0FB96F67F489 /* Pods_BreathAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A604D4A684DA438B1AB2451 /* Pods_BreathAnimationTests.framework */; };
+		91B736372088CE75001D4E10 /* ScriptCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B736362088CE75001D4E10 /* ScriptCommand.swift */; };
+		91B736392088D00A001D4E10 /* AnimationScript.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B736382088D00A001D4E10 /* AnimationScript.json */; };
+		91B7363B2088DA85001D4E10 /* ScriptCommand+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7363A2088DA85001D4E10 /* ScriptCommand+Decodable.swift */; };
 		91D43C442088CA1F00BCE295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D43C432088CA1F00BCE295 /* AppDelegate.swift */; };
 		91D43C492088CA1F00BCE295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C472088CA1F00BCE295 /* Main.storyboard */; };
 		91D43C4B2088CA2000BCE295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C4A2088CA2000BCE295 /* Assets.xcassets */; };
@@ -25,6 +30,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A604D4A684DA438B1AB2451 /* Pods_BreathAnimationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathAnimationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		266789F58DFAF16AE1AC9A02 /* Pods-BreathAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		279CE5B7F60068AC0A8F087C /* Pods-BreathAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		3EB61995F12439488E03654D /* Pods_BreathAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B04FE0A94E5CF1F15CD63E /* Pods-BreathAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		91AC2A1CEC92DE3803D0ED4E /* Pods-BreathAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91B736362088CE75001D4E10 /* ScriptCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCommand.swift; sourceTree = "<group>"; };
+		91B736382088D00A001D4E10 /* AnimationScript.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AnimationScript.json; sourceTree = "<group>"; };
+		91B7363A2088DA85001D4E10 /* ScriptCommand+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScriptCommand+Decodable.swift"; sourceTree = "<group>"; };
 		91D43C402088CA1F00BCE295 /* BreathAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D43C432088CA1F00BCE295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91D43C482088CA1F00BCE295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AE7FD6FB1B765FB4E8D805 /* Pods_BreathAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D477E5DE89F0FB96F67F489 /* Pods_BreathAnimationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55E30B82F9880BF3AC7CA5BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				266789F58DFAF16AE1AC9A02 /* Pods-BreathAnimation.debug.xcconfig */,
+				279CE5B7F60068AC0A8F087C /* Pods-BreathAnimation.release.xcconfig */,
+				91AC2A1CEC92DE3803D0ED4E /* Pods-BreathAnimationTests.debug.xcconfig */,
+				53B04FE0A94E5CF1F15CD63E /* Pods-BreathAnimationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		91D43C372088CA1F00BCE295 = {
 			isa = PBXGroup;
 			children = (
 				91D43C422088CA1F00BCE295 /* BreathAnimation */,
 				91D43C572088CA2100BCE295 /* BreathAnimationTests */,
 				91D43C412088CA1F00BCE295 /* Products */,
+				55E30B82F9880BF3AC7CA5BB /* Pods */,
+				CD57A6007A74F8E8CA93B7B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,10 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				91D43C432088CA1F00BCE295 /* AppDelegate.swift */,
+				91B736362088CE75001D4E10 /* ScriptCommand.swift */,
+				91B7363A2088DA85001D4E10 /* ScriptCommand+Decodable.swift */,
 				91D43C472088CA1F00BCE295 /* Main.storyboard */,
 				91D43C4A2088CA2000BCE295 /* Assets.xcassets */,
 				91D43C4C2088CA2000BCE295 /* LaunchScreen.storyboard */,
 				91D43C4F2088CA2100BCE295 /* Info.plist */,
+				91B736382088D00A001D4E10 /* AnimationScript.json */,
 			);
 			path = BreathAnimation;
 			sourceTree = "<group>";
@@ -93,6 +125,15 @@
 			path = BreathAnimationTests;
 			sourceTree = "<group>";
 		};
+		CD57A6007A74F8E8CA93B7B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EB61995F12439488E03654D /* Pods_BreathAnimation.framework */,
+				1A604D4A684DA438B1AB2451 /* Pods_BreathAnimationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91D43C5D2088CA2100BCE295 /* Build configuration list for PBXNativeTarget "BreathAnimation" */;
 			buildPhases = (
+				65522347E7ACA3DB34861A20 /* [CP] Check Pods Manifest.lock */,
 				91D43C3C2088CA1F00BCE295 /* Sources */,
 				91D43C3D2088CA1F00BCE295 /* Frameworks */,
 				91D43C3E2088CA1F00BCE295 /* Resources */,
+				0EFE846EDFBED020B346C8FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -117,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91D43C602088CA2100BCE295 /* Build configuration list for PBXNativeTarget "BreathAnimationTests" */;
 			buildPhases = (
+				809085DD142FE30ABD112D0D /* [CP] Check Pods Manifest.lock */,
 				91D43C502088CA2100BCE295 /* Sources */,
 				91D43C512088CA2100BCE295 /* Frameworks */,
 				91D43C522088CA2100BCE295 /* Resources */,
@@ -175,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D43C4E2088CA2000BCE295 /* LaunchScreen.storyboard in Resources */,
+				91B736392088D00A001D4E10 /* AnimationScript.json in Resources */,
 				91D43C4B2088CA2000BCE295 /* Assets.xcassets in Resources */,
 				91D43C492088CA1F00BCE295 /* Main.storyboard in Resources */,
 			);
@@ -189,12 +234,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EFE846EDFBED020B346C8FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65522347E7ACA3DB34861A20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreathAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		809085DD142FE30ABD112D0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreathAnimationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91D43C3C2088CA1F00BCE295 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B736372088CE75001D4E10 /* ScriptCommand.swift in Sources */,
 				91D43C442088CA1F00BCE295 /* AppDelegate.swift in Sources */,
+				91B7363B2088DA85001D4E10 /* ScriptCommand+Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +456,7 @@
 		};
 		91D43C5E2088CA2100BCE295 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266789F58DFAF16AE1AC9A02 /* Pods-BreathAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +475,7 @@
 		};
 		91D43C5F2088CA2100BCE295 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279CE5B7F60068AC0A8F087C /* Pods-BreathAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +494,7 @@
 		};
 		91D43C612088CA2100BCE295 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91AC2A1CEC92DE3803D0ED4E /* Pods-BreathAnimationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -409,6 +516,7 @@
 		};
 		91D43C622088CA2100BCE295 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B04FE0A94E5CF1F15CD63E /* Pods-BreathAnimationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
