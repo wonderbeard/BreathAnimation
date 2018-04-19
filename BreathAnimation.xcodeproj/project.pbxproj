@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		30AE7FD6FB1B765FB4E8D805 /* Pods_BreathAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB61995F12439488E03654D /* Pods_BreathAnimation.framework */; };
 		8D477E5DE89F0FB96F67F489 /* Pods_BreathAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A604D4A684DA438B1AB2451 /* Pods_BreathAnimationTests.framework */; };
+		910E66622088E0AA00A8B716 /* BreathViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66612088E0AA00A8B716 /* BreathViewInterface.swift */; };
+		910E66642088E17200A8B716 /* BreathViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66632088E17200A8B716 /* BreathViewControllerTests.swift */; };
+		910E66662088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66652088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift */; };
 		91B736372088CE75001D4E10 /* ScriptCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B736362088CE75001D4E10 /* ScriptCommand.swift */; };
 		91B736392088D00A001D4E10 /* AnimationScript.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B736382088D00A001D4E10 /* AnimationScript.json */; };
 		91B7363B2088DA85001D4E10 /* ScriptCommand+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7363A2088DA85001D4E10 /* ScriptCommand+Decodable.swift */; };
+		91B7363D2088DD3D001D4E10 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7363C2088DD3D001D4E10 /* BreathViewController.swift */; };
 		91D43C442088CA1F00BCE295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D43C432088CA1F00BCE295 /* AppDelegate.swift */; };
-		91D43C492088CA1F00BCE295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C472088CA1F00BCE295 /* Main.storyboard */; };
+		91D43C492088CA1F00BCE295 /* BreathViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C472088CA1F00BCE295 /* BreathViewController.storyboard */; };
 		91D43C4B2088CA2000BCE295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C4A2088CA2000BCE295 /* Assets.xcassets */; };
 		91D43C4E2088CA2000BCE295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C4C2088CA2000BCE295 /* LaunchScreen.storyboard */; };
-		91D43C592088CA2100BCE295 /* BreathAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D43C582088CA2100BCE295 /* BreathAnimationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +38,21 @@
 		279CE5B7F60068AC0A8F087C /* Pods-BreathAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		3EB61995F12439488E03654D /* Pods_BreathAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B04FE0A94E5CF1F15CD63E /* Pods-BreathAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		910E66612088E0AA00A8B716 /* BreathViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewInterface.swift; sourceTree = "<group>"; };
+		910E66632088E17200A8B716 /* BreathViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewControllerTests.swift; sourceTree = "<group>"; };
+		910E66652088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewControllerStoryboardTests.swift; sourceTree = "<group>"; };
 		91AC2A1CEC92DE3803D0ED4E /* Pods-BreathAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91B736362088CE75001D4E10 /* ScriptCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCommand.swift; sourceTree = "<group>"; };
 		91B736382088D00A001D4E10 /* AnimationScript.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AnimationScript.json; sourceTree = "<group>"; };
 		91B7363A2088DA85001D4E10 /* ScriptCommand+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScriptCommand+Decodable.swift"; sourceTree = "<group>"; };
+		91B7363C2088DD3D001D4E10 /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		91D43C402088CA1F00BCE295 /* BreathAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D43C432088CA1F00BCE295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91D43C482088CA1F00BCE295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91D43C482088CA1F00BCE295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BreathViewController.storyboard; sourceTree = "<group>"; };
 		91D43C4A2088CA2000BCE295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91D43C4D2088CA2000BCE295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91D43C4F2088CA2100BCE295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91D43C542088CA2100BCE295 /* BreathAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91D43C582088CA2100BCE295 /* BreathAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathAnimationTests.swift; sourceTree = "<group>"; };
 		91D43C5A2088CA2100BCE295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +113,9 @@
 				91D43C432088CA1F00BCE295 /* AppDelegate.swift */,
 				91B736362088CE75001D4E10 /* ScriptCommand.swift */,
 				91B7363A2088DA85001D4E10 /* ScriptCommand+Decodable.swift */,
-				91D43C472088CA1F00BCE295 /* Main.storyboard */,
+				91D43C472088CA1F00BCE295 /* BreathViewController.storyboard */,
+				91B7363C2088DD3D001D4E10 /* BreathViewController.swift */,
+				910E66612088E0AA00A8B716 /* BreathViewInterface.swift */,
 				91D43C4A2088CA2000BCE295 /* Assets.xcassets */,
 				91D43C4C2088CA2000BCE295 /* LaunchScreen.storyboard */,
 				91D43C4F2088CA2100BCE295 /* Info.plist */,
@@ -119,7 +127,8 @@
 		91D43C572088CA2100BCE295 /* BreathAnimationTests */ = {
 			isa = PBXGroup;
 			children = (
-				91D43C582088CA2100BCE295 /* BreathAnimationTests.swift */,
+				910E66632088E17200A8B716 /* BreathViewControllerTests.swift */,
+				910E66652088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift */,
 				91D43C5A2088CA2100BCE295 /* Info.plist */,
 			);
 			path = BreathAnimationTests;
@@ -221,7 +230,7 @@
 				91D43C4E2088CA2000BCE295 /* LaunchScreen.storyboard in Resources */,
 				91B736392088D00A001D4E10 /* AnimationScript.json in Resources */,
 				91D43C4B2088CA2000BCE295 /* Assets.xcassets in Resources */,
-				91D43C492088CA1F00BCE295 /* Main.storyboard in Resources */,
+				91D43C492088CA1F00BCE295 /* BreathViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +307,8 @@
 			files = (
 				91B736372088CE75001D4E10 /* ScriptCommand.swift in Sources */,
 				91D43C442088CA1F00BCE295 /* AppDelegate.swift in Sources */,
+				91B7363D2088DD3D001D4E10 /* BreathViewController.swift in Sources */,
+				910E66622088E0AA00A8B716 /* BreathViewInterface.swift in Sources */,
 				91B7363B2088DA85001D4E10 /* ScriptCommand+Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D43C592088CA2100BCE295 /* BreathAnimationTests.swift in Sources */,
+				910E66642088E17200A8B716 /* BreathViewControllerTests.swift in Sources */,
+				910E66662088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,12 +333,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		91D43C472088CA1F00BCE295 /* Main.storyboard */ = {
+		91D43C472088CA1F00BCE295 /* BreathViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				91D43C482088CA1F00BCE295 /* Base */,
 			);
-			name = Main.storyboard;
+			name = BreathViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		91D43C4C2088CA2000BCE295 /* LaunchScreen.storyboard */ = {
