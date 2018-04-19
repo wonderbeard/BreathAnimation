@@ -26,6 +26,7 @@
 		910E66882089119500A8B716 /* BreathInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66872089119500A8B716 /* BreathInteractor.swift */; };
 		910E668A2089149700A8B716 /* BreathInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66892089149700A8B716 /* BreathInteractorTests.swift */; };
 		910E668D208916FE00A8B716 /* BreathModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E668C208916FE00A8B716 /* BreathModuleAssembly.swift */; };
+		910E669020891A9500A8B716 /* MockBreathInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E668F20891A9500A8B716 /* MockBreathInteractorOutput.swift */; };
 		91B736372088CE75001D4E10 /* AnimationScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B736362088CE75001D4E10 /* AnimationScript.swift */; };
 		91B736392088D00A001D4E10 /* AnimationScript.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B736382088D00A001D4E10 /* AnimationScript.json */; };
 		91B7363B2088DA85001D4E10 /* AnimationScriptCommand+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7363A2088DA85001D4E10 /* AnimationScriptCommand+Decodable.swift */; };
@@ -69,6 +70,7 @@
 		910E66872089119500A8B716 /* BreathInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractor.swift; sourceTree = "<group>"; };
 		910E66892089149700A8B716 /* BreathInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractorTests.swift; sourceTree = "<group>"; };
 		910E668C208916FE00A8B716 /* BreathModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathModuleAssembly.swift; sourceTree = "<group>"; };
+		910E668F20891A9500A8B716 /* MockBreathInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathInteractorOutput.swift; sourceTree = "<group>"; };
 		91AC2A1CEC92DE3803D0ED4E /* Pods-BreathAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91B736362088CE75001D4E10 /* AnimationScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationScript.swift; sourceTree = "<group>"; };
 		91B736382088D00A001D4E10 /* AnimationScript.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AnimationScript.json; sourceTree = "<group>"; };
@@ -204,6 +206,14 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		910E668E20891A8000A8B716 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				910E668F20891A9500A8B716 /* MockBreathInteractorOutput.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		91D43C372088CA1F00BCE295 = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +250,7 @@
 		91D43C572088CA2100BCE295 /* BreathAnimationTests */ = {
 			isa = PBXGroup;
 			children = (
+				910E668E20891A8000A8B716 /* Mocks */,
 				910E66632088E17200A8B716 /* BreathViewControllerTests.swift */,
 				910E66652088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift */,
 				910E66892089149700A8B716 /* BreathInteractorTests.swift */,
@@ -446,6 +457,7 @@
 			files = (
 				910E668A2089149700A8B716 /* BreathInteractorTests.swift in Sources */,
 				910E66642088E17200A8B716 /* BreathViewControllerTests.swift in Sources */,
+				910E669020891A9500A8B716 /* MockBreathInteractorOutput.swift in Sources */,
 				910E66662088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
