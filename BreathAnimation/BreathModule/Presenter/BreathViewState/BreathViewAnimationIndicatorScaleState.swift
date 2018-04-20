@@ -9,7 +9,7 @@
 import Foundation
 import CoreGraphics
 
-struct BreathViewStateAnimationIndicatorScale: BreathViewState {
+struct BreathViewAnimationIndicatorScaleState: BreathViewState {
     
     var scale: CGFloat
     var duration: TimeInterval

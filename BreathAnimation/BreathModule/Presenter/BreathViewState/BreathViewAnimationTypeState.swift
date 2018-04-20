@@ -1,19 +1,19 @@
 //
-//  File.swift
+//  BreathViewStateAnimationType.swift
 //  BreathAnimation
 //
 //  Created by Andrew Malyarchuk on 19.04.2018.
 //  Copyright © 2018 wonderbeard. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-struct BreathViewStateAnimationIndicatorColor: BreathViewState {
+struct BreathViewAnimationTypeState: BreathViewState {
     
-    var color: UIColor
+    var name: String?
     
     func apply(on view: BreathViewInput) {
-        view.setIndicatorColor(color)
+        view.setAnimationType(name)
     }
     
 }
