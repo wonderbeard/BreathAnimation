@@ -17,9 +17,21 @@ class BreathViewController: UIViewController {
     @IBOutlet weak var animationIndicatorView: UIView!
     @IBOutlet weak var totalRemainingTimeLabel: UILabel!
     
+    private lazy var tapRecognizer = UITapGestureRecognizer(
+        target: self,
+        action: #selector(BreathViewController.tapView)
+    )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addGestureRecognizer(tapRecognizer)
         output?.viewIsReady()
+    }
+    
+    @objc private func tapView(_ recognizer: UITapGestureRecognizer) {
+        if recognizer.state == .recognized {
+            output.didTapOnView()
+        }
     }
     
 }
@@ -35,9 +47,9 @@ extension BreathViewController: BreathViewInput {
     }
     
     func setIndicatorScale(_ scale: CGFloat, with duration: TimeInterval) {
-        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseInOut, animations: { [animationIndicatorView] in
+        UIView.animate(withDuration: duration) { [animationIndicatorView] in
             animationIndicatorView?.transform = CGAffineTransform(scaleX: scale, y: scale)
-        })
+        }
     }
     
     func setIndicatorColor(_ color: UIColor) {
@@ -49,7 +61,7 @@ extension BreathViewController: BreathViewInput {
     }
     
     func setUserInteractionEnabled(_ enabled: Bool) {
-        // TODO
+        tapRecognizer.isEnabled = enabled
     }
     
 }
