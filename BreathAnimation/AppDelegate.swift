@@ -40,10 +40,6 @@ extension AppDelegate: UIApplicationDelegate {
         
         window?.rootViewController = breathViewController
         window?.makeKeyAndVisible()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            presenter.animate()
-        }
     }
     
 }

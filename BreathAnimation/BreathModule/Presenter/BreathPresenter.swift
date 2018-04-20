@@ -21,7 +21,7 @@ protocol BreathPresenterInput {
 }
 
 class BreathPresenter: BreathPresenterInput {
-    
+
     weak var view: BreathViewInput!
     var interactor: BreathInteractorInput!
     var viewStateFactory: BreathViewStateFactory = DefaultBreathViewStateFactory()
@@ -36,17 +36,20 @@ class BreathPresenter: BreathPresenterInput {
         interactor.runScript(animationScript)
     }
     
+    private func applyViewState(_ state: BreathViewState) {
+        state.apply(on: view)
+    }
+    
 }
 
 extension BreathPresenter: BreathViewOutput {
     
     func viewIsReady() {
-        view.setIndicatorScale(0.75)
-        view.setUserInteractionEnabled(true)
+        let idleState = viewStateFactory.makeIdleState(duration: 0)
+        applyViewState(idleState)
     }
     
     func didTapOnView() {
-        view.setUserInteractionEnabled(false)
         animate()
     }
     
@@ -55,12 +58,13 @@ extension BreathPresenter: BreathViewOutput {
 extension BreathPresenter: BreathInteractorOutput {
     
     func didStartCommand(_ command: AnimationScript.Command) {
-        viewStateFactory.makeState(for: command).apply(on: view)
+        let commandState = viewStateFactory.makeState(for: command)
+        applyViewState(commandState)
     }
     
     func didFinish() {
-        view.setIndicatorScale(0.75)
-        view.setUserInteractionEnabled(true)
+        let idleState = viewStateFactory.makeIdleState(duration: 0.8)
+        applyViewState(idleState)
     }
     
 }
