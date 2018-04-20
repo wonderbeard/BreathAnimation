@@ -17,10 +17,10 @@
 		910E666E2088FED200A8B716 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E666D2088FED200A8B716 /* Countdown.swift */; };
 		910E66702089055200A8B716 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E666F2089055200A8B716 /* Cancellable.swift */; };
 		910E667220890C9A00A8B716 /* BreathViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667120890C9A00A8B716 /* BreathViewState.swift */; };
-		910E667420890CA900A8B716 /* BreathViewStateAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667320890CA900A8B716 /* BreathViewStateAnimationType.swift */; };
-		910E667620890CB900A8B716 /* BreathViewStateAnimationIndicatorColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667520890CB900A8B716 /* BreathViewStateAnimationIndicatorColor.swift */; };
-		910E667820890CD200A8B716 /* BreathViewStateAnimationIndicatorScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667720890CD200A8B716 /* BreathViewStateAnimationIndicatorScale.swift */; };
-		910E667A20890CF400A8B716 /* BreathViewStateAnimationRemainingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667920890CF400A8B716 /* BreathViewStateAnimationRemainingTime.swift */; };
+		910E667420890CA900A8B716 /* BreathViewAnimationTypeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667320890CA900A8B716 /* BreathViewAnimationTypeState.swift */; };
+		910E667620890CB900A8B716 /* BreathViewAnimationIndicatorColorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667520890CB900A8B716 /* BreathViewAnimationIndicatorColorState.swift */; };
+		910E667820890CD200A8B716 /* BreathViewAnimationIndicatorScaleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667720890CD200A8B716 /* BreathViewAnimationIndicatorScaleState.swift */; };
+		910E667A20890CF400A8B716 /* BreathViewAnimationRemainingTimeStateCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667920890CF400A8B716 /* BreathViewAnimationRemainingTimeStateCountdown.swift */; };
 		910E667C20890D0500A8B716 /* CompositeBreathViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667B20890D0500A8B716 /* CompositeBreathViewState.swift */; };
 		910E667F20890DE400A8B716 /* BreathViewStateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E667E20890DE400A8B716 /* BreathViewStateFactory.swift */; };
 		910E66882089119500A8B716 /* BreathInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66872089119500A8B716 /* BreathInteractor.swift */; };
@@ -31,6 +31,11 @@
 		91B736392088D00A001D4E10 /* AnimationScript.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B736382088D00A001D4E10 /* AnimationScript.json */; };
 		91B7363B2088DA85001D4E10 /* AnimationScriptCommand+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7363A2088DA85001D4E10 /* AnimationScriptCommand+Decodable.swift */; };
 		91B7363D2088DD3D001D4E10 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7363C2088DD3D001D4E10 /* BreathViewController.swift */; };
+		91D103EA2089F29C00DF36BD /* BreathViewUserInteractionEnabledState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D103E92089F29C00DF36BD /* BreathViewUserInteractionEnabledState.swift */; };
+		91D103EC2089F52900DF36BD /* BreathViewAnimationRemainingTimeStateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D103EB2089F52900DF36BD /* BreathViewAnimationRemainingTimeStateText.swift */; };
+		91D103EE208A01D400DF36BD /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D103ED208A01D400DF36BD /* Mapper.swift */; };
+		91D103F0208A082200DF36BD /* CountdownMinutesAndSecondsFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D103EF208A082200DF36BD /* CountdownMinutesAndSecondsFormatter.swift */; };
+		91D103F2208A0C4700DF36BD /* UppercasedAnimationScriptCommandTypeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D103F1208A0C4700DF36BD /* UppercasedAnimationScriptCommandTypeFormatter.swift */; };
 		91D43C442088CA1F00BCE295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D43C432088CA1F00BCE295 /* AppDelegate.swift */; };
 		91D43C492088CA1F00BCE295 /* BreathViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C472088CA1F00BCE295 /* BreathViewController.storyboard */; };
 		91D43C4B2088CA2000BCE295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D43C4A2088CA2000BCE295 /* Assets.xcassets */; };
@@ -61,10 +66,10 @@
 		910E666D2088FED200A8B716 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		910E666F2089055200A8B716 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		910E667120890C9A00A8B716 /* BreathViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewState.swift; sourceTree = "<group>"; };
-		910E667320890CA900A8B716 /* BreathViewStateAnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewStateAnimationType.swift; sourceTree = "<group>"; };
-		910E667520890CB900A8B716 /* BreathViewStateAnimationIndicatorColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewStateAnimationIndicatorColor.swift; sourceTree = "<group>"; };
-		910E667720890CD200A8B716 /* BreathViewStateAnimationIndicatorScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewStateAnimationIndicatorScale.swift; sourceTree = "<group>"; };
-		910E667920890CF400A8B716 /* BreathViewStateAnimationRemainingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewStateAnimationRemainingTime.swift; sourceTree = "<group>"; };
+		910E667320890CA900A8B716 /* BreathViewAnimationTypeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewAnimationTypeState.swift; sourceTree = "<group>"; };
+		910E667520890CB900A8B716 /* BreathViewAnimationIndicatorColorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewAnimationIndicatorColorState.swift; sourceTree = "<group>"; };
+		910E667720890CD200A8B716 /* BreathViewAnimationIndicatorScaleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewAnimationIndicatorScaleState.swift; sourceTree = "<group>"; };
+		910E667920890CF400A8B716 /* BreathViewAnimationRemainingTimeStateCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewAnimationRemainingTimeStateCountdown.swift; sourceTree = "<group>"; };
 		910E667B20890D0500A8B716 /* CompositeBreathViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeBreathViewState.swift; sourceTree = "<group>"; };
 		910E667E20890DE400A8B716 /* BreathViewStateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewStateFactory.swift; sourceTree = "<group>"; };
 		910E66872089119500A8B716 /* BreathInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractor.swift; sourceTree = "<group>"; };
@@ -76,6 +81,11 @@
 		91B736382088D00A001D4E10 /* AnimationScript.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AnimationScript.json; sourceTree = "<group>"; };
 		91B7363A2088DA85001D4E10 /* AnimationScriptCommand+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimationScriptCommand+Decodable.swift"; sourceTree = "<group>"; };
 		91B7363C2088DD3D001D4E10 /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
+		91D103E92089F29C00DF36BD /* BreathViewUserInteractionEnabledState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewUserInteractionEnabledState.swift; sourceTree = "<group>"; };
+		91D103EB2089F52900DF36BD /* BreathViewAnimationRemainingTimeStateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewAnimationRemainingTimeStateText.swift; sourceTree = "<group>"; };
+		91D103ED208A01D400DF36BD /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		91D103EF208A082200DF36BD /* CountdownMinutesAndSecondsFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownMinutesAndSecondsFormatter.swift; sourceTree = "<group>"; };
+		91D103F1208A0C4700DF36BD /* UppercasedAnimationScriptCommandTypeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UppercasedAnimationScriptCommandTypeFormatter.swift; sourceTree = "<group>"; };
 		91D43C402088CA1F00BCE295 /* BreathAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D43C432088CA1F00BCE295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91D43C482088CA1F00BCE295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BreathViewController.storyboard; sourceTree = "<group>"; };
@@ -122,10 +132,12 @@
 			children = (
 				910E667120890C9A00A8B716 /* BreathViewState.swift */,
 				910E667B20890D0500A8B716 /* CompositeBreathViewState.swift */,
-				910E667720890CD200A8B716 /* BreathViewStateAnimationIndicatorScale.swift */,
-				910E667920890CF400A8B716 /* BreathViewStateAnimationRemainingTime.swift */,
-				910E667320890CA900A8B716 /* BreathViewStateAnimationType.swift */,
-				910E667520890CB900A8B716 /* BreathViewStateAnimationIndicatorColor.swift */,
+				910E667720890CD200A8B716 /* BreathViewAnimationIndicatorScaleState.swift */,
+				910E667920890CF400A8B716 /* BreathViewAnimationRemainingTimeStateCountdown.swift */,
+				91D103EB2089F52900DF36BD /* BreathViewAnimationRemainingTimeStateText.swift */,
+				910E667320890CA900A8B716 /* BreathViewAnimationTypeState.swift */,
+				910E667520890CB900A8B716 /* BreathViewAnimationIndicatorColorState.swift */,
+				91D103E92089F29C00DF36BD /* BreathViewUserInteractionEnabledState.swift */,
 			);
 			path = BreathViewState;
 			sourceTree = "<group>";
@@ -135,6 +147,7 @@
 			children = (
 				910E666F2089055200A8B716 /* Cancellable.swift */,
 				910E666D2088FED200A8B716 /* Countdown.swift */,
+				91D103ED208A01D400DF36BD /* Mapper.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -152,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				910E66672088E9B800A8B716 /* BreathPresenter.swift */,
+				91D103EF208A082200DF36BD /* CountdownMinutesAndSecondsFormatter.swift */,
+				91D103F1208A0C4700DF36BD /* UppercasedAnimationScriptCommandTypeFormatter.swift */,
 				910E667E20890DE400A8B716 /* BreathViewStateFactory.swift */,
 				910E667D20890DBA00A8B716 /* BreathViewState */,
 			);
@@ -432,21 +447,26 @@
 			files = (
 				910E667220890C9A00A8B716 /* BreathViewState.swift in Sources */,
 				910E667F20890DE400A8B716 /* BreathViewStateFactory.swift in Sources */,
-				910E667620890CB900A8B716 /* BreathViewStateAnimationIndicatorColor.swift in Sources */,
+				91D103F2208A0C4700DF36BD /* UppercasedAnimationScriptCommandTypeFormatter.swift in Sources */,
+				910E667620890CB900A8B716 /* BreathViewAnimationIndicatorColorState.swift in Sources */,
 				910E668D208916FE00A8B716 /* BreathModuleAssembly.swift in Sources */,
 				910E66882089119500A8B716 /* BreathInteractor.swift in Sources */,
 				910E66702089055200A8B716 /* Cancellable.swift in Sources */,
-				910E667420890CA900A8B716 /* BreathViewStateAnimationType.swift in Sources */,
+				91D103EA2089F29C00DF36BD /* BreathViewUserInteractionEnabledState.swift in Sources */,
+				910E667420890CA900A8B716 /* BreathViewAnimationTypeState.swift in Sources */,
 				91B736372088CE75001D4E10 /* AnimationScript.swift in Sources */,
-				910E667A20890CF400A8B716 /* BreathViewStateAnimationRemainingTime.swift in Sources */,
+				910E667A20890CF400A8B716 /* BreathViewAnimationRemainingTimeStateCountdown.swift in Sources */,
 				91D43C442088CA1F00BCE295 /* AppDelegate.swift in Sources */,
+				91D103F0208A082200DF36BD /* CountdownMinutesAndSecondsFormatter.swift in Sources */,
 				91B7363D2088DD3D001D4E10 /* BreathViewController.swift in Sources */,
-				910E667820890CD200A8B716 /* BreathViewStateAnimationIndicatorScale.swift in Sources */,
+				910E667820890CD200A8B716 /* BreathViewAnimationIndicatorScaleState.swift in Sources */,
 				910E666E2088FED200A8B716 /* Countdown.swift in Sources */,
 				910E66622088E0AA00A8B716 /* BreathViewInterface.swift in Sources */,
 				910E667C20890D0500A8B716 /* CompositeBreathViewState.swift in Sources */,
+				91D103EE208A01D400DF36BD /* Mapper.swift in Sources */,
 				910E66682088E9B800A8B716 /* BreathPresenter.swift in Sources */,
 				91B7363B2088DA85001D4E10 /* AnimationScriptCommand+Decodable.swift in Sources */,
+				91D103EC2089F52900DF36BD /* BreathViewAnimationRemainingTimeStateText.swift in Sources */,
 				910E666C2088F23A00A8B716 /* BreathInteractorInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
