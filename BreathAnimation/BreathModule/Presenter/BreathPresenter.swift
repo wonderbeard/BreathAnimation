@@ -8,23 +8,13 @@
 
 import UIKit
 
-protocol BreathPresenterInput {
-    
-    var view: BreathViewInput! { get set }
-    
-    var interactor: BreathInteractorInput! { get set }
-    
-    func setAnimationScript(_ script: AnimationScript)
-    
-    func animate()
-    
-}
-
 class BreathPresenter: BreathPresenterInput {
 
     weak var view: BreathViewInput!
     var interactor: BreathInteractorInput!
     var viewStateFactory: BreathViewStateFactory = DefaultBreathViewStateFactory()
+    var totalRemainingTimeFormatter: AnyMapper<TimeInterval, String?>
+        = AnyMapper(CountdownMinutesAndSecondsFormatter())
     
     private var animationScript: AnimationScript = .empty
     
@@ -45,7 +35,7 @@ class BreathPresenter: BreathPresenterInput {
 extension BreathPresenter: BreathViewOutput {
     
     func viewIsReady() {
-        let idleState = viewStateFactory.makeIdleState(duration: 0)
+        let idleState = viewStateFactory.makeIdleState(transitionDuration: 0)
         applyViewState(idleState)
     }
     
@@ -57,13 +47,21 @@ extension BreathPresenter: BreathViewOutput {
 
 extension BreathPresenter: BreathInteractorOutput {
     
+    func didStartScript(_ animationScript: AnimationScript) {
+        let countdown = Countdown(duration: animationScript.duration, interval: 1)
+        countdown.start { [view, totalRemainingTimeFormatter] remainingTime in
+            let remainingTimeText = totalRemainingTimeFormatter.map(remainingTime)
+            view?.setTotalRemainingTime(remainingTimeText)
+        }
+    }
+    
     func didStartCommand(_ command: AnimationScript.Command) {
         let commandState = viewStateFactory.makeState(for: command)
         applyViewState(commandState)
     }
     
     func didFinish() {
-        let idleState = viewStateFactory.makeIdleState(duration: 0.8)
+        let idleState = viewStateFactory.makeIdleState(transitionDuration: 0.4)
         applyViewState(idleState)
     }
     

@@ -11,7 +11,7 @@ import SwiftHEXColors
 
 protocol BreathViewStateFactory {
     func makeState(for command: AnimationScript.Command) -> BreathViewState
-    func makeIdleState(duration: TimeInterval) -> BreathViewState
+    func makeIdleState(transitionDuration: TimeInterval) -> BreathViewState
 }
 
 class DefaultBreathViewStateFactory: BreathViewStateFactory {
@@ -33,11 +33,11 @@ class DefaultBreathViewStateFactory: BreathViewStateFactory {
         }
     }
     
-    func makeIdleState(duration: TimeInterval) -> BreathViewState {
+    func makeIdleState(transitionDuration: TimeInterval) -> BreathViewState {
         return CompositeBreathViewState(
             BreathViewAnimationTypeState(name: "TAP TO START"),
             BreathViewAnimationIndicatorColorState(color: UIColor(hex: 0x7A83F2)!),
-            BreathViewAnimationIndicatorScaleState(scale: 0.75, duration: duration),
+            BreathViewAnimationIndicatorScaleState(scale: 0.75, duration: transitionDuration),
             BreathViewAnimationRemainingTimeStateText(nil),
             BreathViewUserInteractionEnabledState(true)
         )

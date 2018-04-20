@@ -55,19 +55,31 @@
                                     <constraint firstItem="Uwv-7F-v6u" firstAttribute="centerX" secondItem="3bG-Hf-Iqb" secondAttribute="centerX" id="epx-ky-8xJ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsy-6L-nCh">
-                                <rect key="frame" x="0.0" y="626.5" width="375" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iA7-8v-fJA">
+                                <rect key="frame" x="0.0" y="587" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total remaining:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9S-hx-OxT">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsy-6L-nCh">
+                                        <rect key="frame" x="5" y="0.0" width="370" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3bG-Hf-Iqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rt7-p7-FPh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dsy-6L-nCh" secondAttribute="bottom" constant="20" id="XKr-1S-Vo6"/>
-                            <constraint firstItem="dsy-6L-nCh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eaq-iN-RRV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsy-6L-nCh" secondAttribute="trailing" id="he1-s4-HGL"/>
+                            <constraint firstAttribute="bottom" secondItem="iA7-8v-fJA" secondAttribute="bottom" constant="30" id="ihy-X4-Q1X"/>
+                            <constraint firstItem="iA7-8v-fJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="imr-6P-RzZ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iA7-8v-fJA" secondAttribute="trailing" id="jhp-Va-8em"/>
+                            <constraint firstItem="iA7-8v-fJA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u4E-Ph-Is8"/>
                             <constraint firstItem="3bG-Hf-Iqb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wgf-08-5l1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

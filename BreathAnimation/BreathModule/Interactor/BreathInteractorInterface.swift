@@ -18,6 +18,8 @@ protocol BreathInteractorInput {
 
 protocol BreathInteractorOutput: class {
     
+    func didStartScript(_ animationScript: AnimationScript)
+    
     func didStartCommand(_ command: AnimationScript.Command)
     
     func didFinish()

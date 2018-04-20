@@ -13,6 +13,7 @@ class BreathInteractor: BreathInteractorInput {
     weak var output: BreathInteractorOutput!
     
     func runScript(_ animationScript: AnimationScript) {
+        output.didStartScript(animationScript)
         resolve(animationScript)
     }
     
