@@ -16,14 +16,14 @@ class BreathPresenter: BreathPresenterInput {
     var totalRemainingTimeFormatter: AnyMapper<TimeInterval, String?>
         = AnyMapper(CountdownMinutesAndSecondsFormatter())
     
-    private var animationScript: AnimationScript = .empty
+    private var animationScript: AnimationScript?
     
     func setAnimationScript(_ script: AnimationScript) {
         animationScript = script
     }
     
     func animate() {
-        interactor.runScript(animationScript)
+        animationScript.map(interactor.runScript)
     }
     
     private func applyViewState(_ state: BreathViewState) {

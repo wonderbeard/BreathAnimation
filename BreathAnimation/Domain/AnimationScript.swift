@@ -8,9 +8,9 @@
 
 import UIKit
 
-struct AnimationScript {
+struct AnimationScript: Equatable {
     
-    struct Command {
+    struct Command: Equatable {
         
         enum CommandType: String, Codable {
             case inhale, exhale, hold

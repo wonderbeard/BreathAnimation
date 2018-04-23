@@ -13,7 +13,7 @@ class Countdown {
     private let duration: TimeInterval
     private let interval: TimeInterval
     
-    init(duration: TimeInterval, interval: TimeInterval) {
+    init(duration: TimeInterval, interval: TimeInterval = 1) {
         self.duration = duration
         self.interval = interval
     }

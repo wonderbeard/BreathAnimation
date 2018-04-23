@@ -30,13 +30,21 @@ class BreathInteractorTests: XCTestCase {
             .init(type: .hold, duration: 0.3, color: .blue),
             .init(type: .exhale, duration: 0.2, color: .red)
         ]
+        let animationScript = AnimationScript(commands: commands)
+        
         let mockOutput = MockBreathInteractorOutput()
         sut.output = mockOutput
         
+        let scriptStartedExpectation = XCTestExpectation(description: "Script execution started")
         let inhaleExpectation = XCTestExpectation(description: "Inhale command")
         let holdExpectation = XCTestExpectation(description: "hold command")
         let exhaleExpectation = XCTestExpectation(description: "Exhale command")
         let finishExpectation = XCTestExpectation(description: "Script finish expectation")
+        
+        mockOutput.onDidStart = { script in
+            XCTAssertEqual(animationScript, script)
+            scriptStartedExpectation.fulfill()
+        }
         
         mockOutput.onDidStartCommand = { command in
             switch command.type {
@@ -54,11 +62,11 @@ class BreathInteractorTests: XCTestCase {
         }
         
         // act
-        sut.runScript(AnimationScript(commands: commands))
+        sut.runScript(animationScript)
         
         // assert
         wait(
-            for: [inhaleExpectation, holdExpectation, exhaleExpectation, finishExpectation],
+            for: [scriptStartedExpectation, inhaleExpectation, holdExpectation, exhaleExpectation, finishExpectation],
             timeout: 0.8,
             enforceOrder: true
         )

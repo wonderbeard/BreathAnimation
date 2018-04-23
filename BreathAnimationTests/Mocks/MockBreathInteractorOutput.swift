@@ -11,8 +11,13 @@ import Foundation
 
 class MockBreathInteractorOutput: BreathInteractorOutput {
     
+    var onDidStart: (AnimationScript) -> Void = { _ in }
     var onDidStartCommand: (AnimationScript.Command) -> Void = { _ in }
     var onDidFinish: () -> Void = {}
+    
+    func didStartScript(_ animationScript: AnimationScript) {
+        onDidStart(animationScript)
+    }
     
     func didStartCommand(_ command: AnimationScript.Command) {
         onDidStartCommand(command)
