@@ -16,6 +16,10 @@ struct CompositeBreathViewState: BreathViewState {
         self.composables = composables
     }
     
+    init(composables: [BreathViewState]) {
+        self.composables = composables
+    }
+    
     mutating func append(_ state: BreathViewState) {
         composables.append(state)
     }

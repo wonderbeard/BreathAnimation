@@ -16,72 +16,58 @@ protocol BreathViewStateFactory {
 
 class DefaultBreathViewStateFactory: BreathViewStateFactory {
     
-    lazy var remainingTimeFormatter: AnyMapper<TimeInterval, String?>
-        = AnyMapper(CountdownMinutesAndSecondsFormatter())
+    enum Constants {
+        static let inhaleAnimationIndicatorScale: CGFloat = 1
+        static let exhaleAnimationIndicatorScale: CGFloat = 0.5
+        static let idleState = (
+            animationIndicatorScale: 0.75 as CGFloat,
+            animationIndicatorColor: UIColor(hex: 0x7A83F2)!,
+            title: "TAP TO START"
+        )
+    }
     
-    lazy var commandNameFormatter: AnyMapper<AnimationScript.Command, String?>
-        = AnyMapper(UppercasedAnimationScriptCommandTypeFormatter())
+    lazy var remainingTimeFormatter = AnyMapper(CountdownMinutesAndSecondsFormatter())
+    lazy var commandNameFormatter = AnyMapper(UppercasedAnimationScriptCommandTypeFormatter())
     
     func makeState(for command: AnimationScript.Command) -> BreathViewState {
         switch command.type {
         case .inhale:
-            return makeInhaleState(for: command)
+            return makeTransitionState(for: command, scale: Constants.inhaleAnimationIndicatorScale)
         case .exhale:
-            return makeExhaleState(for: command)
+            return makeTransitionState(for: command, scale: Constants.exhaleAnimationIndicatorScale)
         case .hold:
             return makeHoldState(for: command)
         }
     }
     
     func makeIdleState(transitionDuration: TimeInterval) -> BreathViewState {
-        return CompositeBreathViewState(
-            BreathViewAnimationTypeState(name: "TAP TO START"),
-            BreathViewAnimationIndicatorColorState(color: UIColor(hex: 0x7A83F2)!),
-            BreathViewAnimationIndicatorScaleState(scale: 0.75, duration: transitionDuration),
-            BreathViewAnimationRemainingTimeStateText(nil),
-            BreathViewUserInteractionEnabledState(true)
-        )
+        let builder = BreathViewStateBuilder()
+        builder.setTitle(Constants.idleState.title)
+        builder.setAnimationIndicatorColor(Constants.idleState.animationIndicatorColor)
+        builder.setAnimationIndicatorScale(Constants.idleState.animationIndicatorScale, transitionDuration: transitionDuration)
+        builder.setRemainingTimeText(nil)
+        builder.setTotalRemainingTimeText(nil)
+        builder.setUserInteractionEnabled(true)
+        return builder.getResult()
     }
     
-    private func makeInhaleState(for command: AnimationScript.Command) -> BreathViewState {
-        let animationName = commandNameFormatter.map(command)
-        return CompositeBreathViewState(
-            BreathViewAnimationTypeState(name: animationName),
-            BreathViewAnimationIndicatorColorState(color: command.color),
-            BreathViewAnimationRemainingTimeStateCountdown(
-                countdown: Countdown(duration: command.duration, interval: 1),
-                timeFormatter: remainingTimeFormatter
-            ),
-            BreathViewAnimationIndicatorScaleState(scale: 1, duration: command.duration),
-            BreathViewUserInteractionEnabledState(false)
-        )
-    }
-    
-    private func makeExhaleState(for command: AnimationScript.Command) -> BreathViewState {
-        let animationName = commandNameFormatter.map(command)
-        return CompositeBreathViewState(
-            BreathViewAnimationTypeState(name: animationName),
-            BreathViewAnimationIndicatorColorState(color: command.color),
-            BreathViewAnimationRemainingTimeStateCountdown(
-                countdown: Countdown(duration: command.duration, interval: 1),
-                timeFormatter: remainingTimeFormatter
-            ),
-            BreathViewAnimationIndicatorScaleState(scale: 0.5, duration: command.duration),
-            BreathViewUserInteractionEnabledState(false)
-        )
+    private func makeTransitionState(for command: AnimationScript.Command, scale: CGFloat) -> BreathViewState {
+        let builder = BreathViewStateBuilder()
+        builder.setTitle(commandNameFormatter.map(command))
+        builder.setAnimationIndicatorColor(command.color)
+        builder.setAnimationIndicatorScale(scale, transitionDuration: command.duration)
+        builder.setRemainingTimeCountdown(Countdown(duration: command.duration), formatter: remainingTimeFormatter)
+        builder.setUserInteractionEnabled(false)
+        return builder.getResult()
     }
     
     private func makeHoldState(for command: AnimationScript.Command) -> BreathViewState {
-        let animationName = commandNameFormatter.map(command)
-        return CompositeBreathViewState(
-            BreathViewAnimationTypeState(name: animationName),
-            BreathViewAnimationIndicatorColorState(color: command.color),
-            BreathViewAnimationRemainingTimeStateCountdown(
-                countdown: Countdown(duration: command.duration, interval: 1),
-                timeFormatter: remainingTimeFormatter
-            ),
-            BreathViewUserInteractionEnabledState(false)
-        )
+        let builder = BreathViewStateBuilder()
+        builder.setTitle(commandNameFormatter.map(command))
+        builder.setAnimationIndicatorColor(command.color)
+        builder.setRemainingTimeCountdown(Countdown(duration: command.duration), formatter: remainingTimeFormatter)
+        builder.setUserInteractionEnabled(false)
+        return builder.getResult()
     }
     
 }
