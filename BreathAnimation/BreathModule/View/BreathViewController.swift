@@ -28,7 +28,7 @@ class BreathViewController: UIViewController {
         output?.viewIsReady()
     }
     
-    @objc private func tapView(_ recognizer: UITapGestureRecognizer) {
+    @objc func tapView(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .recognized {
             output.didTapOnView()
         }

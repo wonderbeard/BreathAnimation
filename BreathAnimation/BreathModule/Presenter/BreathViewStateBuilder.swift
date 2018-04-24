@@ -30,18 +30,18 @@ class BreathViewStateBuilder {
         }
     }
     
-    func setTotalRemainingTimeText(_ totalRemainingText: String?) {
-        reducers.append { view in
-            view.setTotalRemainingTime(totalRemainingText)
-        }
-    }
-    
     func setRemainingTimeCountdown(_ countdown: Countdown, formatter: AnyMapper<TimeInterval, String?>) {
         reducers.append { view in
             countdown.start { remainingTime in
                 let remainingTimeText = formatter.map(remainingTime)
                 view.setAnimationRemainingTime(remainingTimeText)
             }
+        }
+    }
+    
+    func setTotalRemainingTimeText(_ totalRemainingText: String?) {
+        reducers.append { view in
+            view.setTotalRemainingTime(totalRemainingText)
         }
     }
     

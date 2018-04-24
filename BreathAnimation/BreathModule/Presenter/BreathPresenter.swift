@@ -16,7 +16,7 @@ class BreathPresenter: BreathPresenterInput {
     var totalRemainingTimeFormatter: AnyMapper<TimeInterval, String?>
         = AnyMapper(CountdownMinutesAndSecondsFormatter())
     
-    private var animationScript: AnimationScript?
+    private(set) var animationScript: AnimationScript?
     
     func setAnimationScript(_ script: AnimationScript) {
         animationScript = script
@@ -48,7 +48,7 @@ extension BreathPresenter: BreathViewOutput {
 extension BreathPresenter: BreathInteractorOutput {
     
     func didStartScript(_ animationScript: AnimationScript) {
-        let countdown = Countdown(duration: animationScript.duration, interval: 1)
+        let countdown = Countdown(duration: animationScript.duration)
         countdown.start { [view, totalRemainingTimeFormatter] remainingTime in
             let remainingTimeText = totalRemainingTimeFormatter.map(remainingTime)
             view?.setTotalRemainingTime(remainingTimeText)

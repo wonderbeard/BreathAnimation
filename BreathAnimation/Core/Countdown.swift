@@ -10,8 +10,8 @@ import Foundation
 
 class Countdown {
     
-    private let duration: TimeInterval
-    private let interval: TimeInterval
+    let duration: TimeInterval
+    let interval: TimeInterval
     
     init(duration: TimeInterval, interval: TimeInterval = 1) {
         self.duration = duration
@@ -24,7 +24,9 @@ class Countdown {
         handler(remainingTime)
         let timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { timer in
             remainingTime -= timer.timeInterval
-            handler(remainingTime)
+            if remainingTime >= 0 {
+                handler(remainingTime)
+            }
             if remainingTime <= 0 {
                 timer.invalidate()
             }

@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		30AE7FD6FB1B765FB4E8D805 /* Pods_BreathAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB61995F12439488E03654D /* Pods_BreathAnimation.framework */; };
+		7C69EAF8208F281800B063CF /* MockBreathViewStateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EAF7208F281800B063CF /* MockBreathViewStateFactory.swift */; };
+		7C69EAFA208F29A800B063CF /* MockBreathViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EAF9208F29A800B063CF /* MockBreathViewState.swift */; };
+		7C69EAFC208F2DA900B063CF /* BreathPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EAFB208F2DA900B063CF /* BreathPresenterSpy.swift */; };
+		7C69EAFF208F453100B063CF /* ClosureBreathViewStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EAFE208F453100B063CF /* ClosureBreathViewStateTests.swift */; };
+		7C69EB01208F462F00B063CF /* CompositeBreathViewStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EB00208F462F00B063CF /* CompositeBreathViewStateTests.swift */; };
+		7C69EB03208F470C00B063CF /* ClosureCancellableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EB02208F470C00B063CF /* ClosureCancellableTests.swift */; };
+		7C69EB05208F476400B063CF /* CompositeCancellableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EB04208F476400B063CF /* CompositeCancellableTests.swift */; };
+		7C69EB07208F4A6100B063CF /* MockBreathViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EB06208F4A6100B063CF /* MockBreathViewOutput.swift */; };
+		7C69EB09208F4BA400B063CF /* BreathViewStateBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EB08208F4BA400B063CF /* BreathViewStateBuilderTests.swift */; };
+		7C69EB0B208F548100B063CF /* CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69EB0A208F548100B063CF /* CountdownTests.swift */; };
 		8D477E5DE89F0FB96F67F489 /* Pods_BreathAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A604D4A684DA438B1AB2451 /* Pods_BreathAnimationTests.framework */; };
 		910E66622088E0AA00A8B716 /* BreathViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66612088E0AA00A8B716 /* BreathViewInterface.swift */; };
 		910E66642088E17200A8B716 /* BreathViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E66632088E17200A8B716 /* BreathViewControllerTests.swift */; };
@@ -60,6 +70,16 @@
 		279CE5B7F60068AC0A8F087C /* Pods-BreathAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimation/Pods-BreathAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		3EB61995F12439488E03654D /* Pods_BreathAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B04FE0A94E5CF1F15CD63E /* Pods-BreathAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathAnimationTests/Pods-BreathAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C69EAF7208F281800B063CF /* MockBreathViewStateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathViewStateFactory.swift; sourceTree = "<group>"; };
+		7C69EAF9208F29A800B063CF /* MockBreathViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathViewState.swift; sourceTree = "<group>"; };
+		7C69EAFB208F2DA900B063CF /* BreathPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPresenterSpy.swift; sourceTree = "<group>"; };
+		7C69EAFE208F453100B063CF /* ClosureBreathViewStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureBreathViewStateTests.swift; sourceTree = "<group>"; };
+		7C69EB00208F462F00B063CF /* CompositeBreathViewStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeBreathViewStateTests.swift; sourceTree = "<group>"; };
+		7C69EB02208F470C00B063CF /* ClosureCancellableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureCancellableTests.swift; sourceTree = "<group>"; };
+		7C69EB04208F476400B063CF /* CompositeCancellableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeCancellableTests.swift; sourceTree = "<group>"; };
+		7C69EB06208F4A6100B063CF /* MockBreathViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathViewOutput.swift; sourceTree = "<group>"; };
+		7C69EB08208F4BA400B063CF /* BreathViewStateBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewStateBuilderTests.swift; sourceTree = "<group>"; };
+		7C69EB0A208F548100B063CF /* CountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTests.swift; sourceTree = "<group>"; };
 		910E66612088E0AA00A8B716 /* BreathViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewInterface.swift; sourceTree = "<group>"; };
 		910E66632088E17200A8B716 /* BreathViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewControllerTests.swift; sourceTree = "<group>"; };
 		910E66652088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewControllerStoryboardTests.swift; sourceTree = "<group>"; };
@@ -129,6 +149,20 @@
 				53B04FE0A94E5CF1F15CD63E /* Pods-BreathAnimationTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C69EAFD208F44DC00B063CF /* BreathModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				910E66632088E17200A8B716 /* BreathViewControllerTests.swift */,
+				910E66652088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift */,
+				910E66892089149700A8B716 /* BreathInteractorTests.swift */,
+				9161E999208E851300DCB6F4 /* BreathPresenterTests.swift */,
+				7C69EAFE208F453100B063CF /* ClosureBreathViewStateTests.swift */,
+				7C69EB00208F462F00B063CF /* CompositeBreathViewStateTests.swift */,
+				7C69EB08208F4BA400B063CF /* BreathViewStateBuilderTests.swift */,
+			);
+			path = BreathModuleTests;
 			sourceTree = "<group>";
 		};
 		910E667D20890DBA00A8B716 /* BreathViewState */ = {
@@ -227,6 +261,10 @@
 				910E668F20891A9500A8B716 /* MockBreathInteractorOutput.swift */,
 				9161E99B208E867100DCB6F4 /* MockBreathInteractorInput.swift */,
 				9161E99D208E87B500DCB6F4 /* MockBreathViewInput.swift */,
+				7C69EB06208F4A6100B063CF /* MockBreathViewOutput.swift */,
+				7C69EAF7208F281800B063CF /* MockBreathViewStateFactory.swift */,
+				7C69EAF9208F29A800B063CF /* MockBreathViewState.swift */,
+				7C69EAFB208F2DA900B063CF /* BreathPresenterSpy.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -277,12 +315,12 @@
 			isa = PBXGroup;
 			children = (
 				910E668E20891A8000A8B716 /* Mocks */,
-				910E66632088E17200A8B716 /* BreathViewControllerTests.swift */,
-				910E66652088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift */,
-				910E66892089149700A8B716 /* BreathInteractorTests.swift */,
-				9161E999208E851300DCB6F4 /* BreathPresenterTests.swift */,
+				7C69EAFD208F44DC00B063CF /* BreathModuleTests */,
 				9161E993208E80F200DCB6F4 /* CountdownMinutesAndSecondsFormatterTests.swift */,
 				9161E997208E83E800DCB6F4 /* UppercasedAnimationScriptCommandTypeFormatterTests.swift */,
+				7C69EB02208F470C00B063CF /* ClosureCancellableTests.swift */,
+				7C69EB04208F476400B063CF /* CompositeCancellableTests.swift */,
+				7C69EB0A208F548100B063CF /* CountdownTests.swift */,
 				91D43C5A2088CA2100BCE295 /* Info.plist */,
 			);
 			path = BreathAnimationTests;
@@ -486,15 +524,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C69EB09208F4BA400B063CF /* BreathViewStateBuilderTests.swift in Sources */,
+				7C69EB03208F470C00B063CF /* ClosureCancellableTests.swift in Sources */,
+				7C69EB01208F462F00B063CF /* CompositeBreathViewStateTests.swift in Sources */,
+				7C69EAFC208F2DA900B063CF /* BreathPresenterSpy.swift in Sources */,
 				9161E998208E83E800DCB6F4 /* UppercasedAnimationScriptCommandTypeFormatterTests.swift in Sources */,
 				910E668A2089149700A8B716 /* BreathInteractorTests.swift in Sources */,
 				9161E994208E80F200DCB6F4 /* CountdownMinutesAndSecondsFormatterTests.swift in Sources */,
+				7C69EB05208F476400B063CF /* CompositeCancellableTests.swift in Sources */,
+				7C69EB07208F4A6100B063CF /* MockBreathViewOutput.swift in Sources */,
 				9161E99A208E851300DCB6F4 /* BreathPresenterTests.swift in Sources */,
 				910E66642088E17200A8B716 /* BreathViewControllerTests.swift in Sources */,
 				9161E99C208E867100DCB6F4 /* MockBreathInteractorInput.swift in Sources */,
+				7C69EAF8208F281800B063CF /* MockBreathViewStateFactory.swift in Sources */,
 				910E669020891A9500A8B716 /* MockBreathInteractorOutput.swift in Sources */,
+				7C69EAFA208F29A800B063CF /* MockBreathViewState.swift in Sources */,
+				7C69EAFF208F453100B063CF /* ClosureBreathViewStateTests.swift in Sources */,
 				910E66662088E68F00A8B716 /* BreathViewControllerStoryboardTests.swift in Sources */,
 				9161E99E208E87B500DCB6F4 /* MockBreathViewInput.swift in Sources */,
+				7C69EB0B208F548100B063CF /* CountdownTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

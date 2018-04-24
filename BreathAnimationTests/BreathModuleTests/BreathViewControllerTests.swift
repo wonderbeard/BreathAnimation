@@ -12,14 +12,18 @@ import XCTest
 class BreathViewControllerTests: XCTestCase {
     
     var sut: BreathViewController!
+    var outputMock: MockBreathViewOutput!
     
     override func setUp() {
         super.setUp()
         sut = BreathViewController()
+        outputMock = MockBreathViewOutput()
+        sut.output = outputMock
     }
     
     override func tearDown() {
         sut = nil
+        outputMock = nil
         super.tearDown()
     }
     
@@ -77,6 +81,28 @@ class BreathViewControllerTests: XCTestCase {
         sut.setTotalRemainingTime(remaining)
         // assert
         XCTAssertEqual(sut.totalRemainingTimeLabel.text, remaining)
+    }
+    
+    func test_tapView_withRecognizedState_notifiesOutput() {
+        
+        class RecognizedStateTapGestureRecognizer: UITapGestureRecognizer {
+            
+            init() {
+                super.init(target: nil, action: nil)
+            }
+            
+            override var state: UIGestureRecognizerState {
+                return .recognized
+            }
+            
+        }
+        
+        // arrange
+        let recognizerMock = RecognizedStateTapGestureRecognizer()
+        // act
+        sut.tapView(recognizerMock)
+        // assert
+        XCTAssertTrue(outputMock.didTapOnViewCalled)
     }
     
 }
