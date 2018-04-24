@@ -31,3 +31,19 @@ struct AnyMapper<Input, Output>: Mapper {
     }
     
 }
+
+struct TransitMapper<Input, Output>: Mapper {
+    
+    private let performMap: (Input) -> Output
+    
+    init<M1: Mapper, M2: Mapper>(_ lhs: M1, _ rhs: M2) where M1.Input == Input, M1.Output == M2.Input, M2.Output == Output {
+        performMap = { value in
+            rhs.map(lhs.map(value))
+        }
+    }
+    
+    func map(_ value: Input) -> Output {
+        return performMap(value)
+    }
+    
+}

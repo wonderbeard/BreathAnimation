@@ -9,12 +9,20 @@
 import UIKit
 
 class BreathPresenter: BreathPresenterInput {
+    
+    enum Constants {
+        static func totalRemainingTimeText(for time: String?) -> String? {
+            return time.map{ "Total remaining time: \($0)" }
+        }
+    }
 
     weak var view: BreathViewInput!
     var interactor: BreathInteractorInput!
     var viewStateFactory: BreathViewStateFactory = DefaultBreathViewStateFactory()
-    var totalRemainingTimeFormatter: AnyMapper<TimeInterval, String?>
-        = AnyMapper(CountdownMinutesAndSecondsFormatter())
+    var totalRemainingTimeFormatter = AnyMapper(TransitMapper(
+        CountdownMinutesAndSecondsFormatter(),
+        AnyMapper{ $0.flatMap(Constants.totalRemainingTimeText) }
+    ))
     
     private(set) var animationScript: AnimationScript?
     
